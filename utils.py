@@ -9,7 +9,7 @@ def exec_query(query: str) -> list:
     conn.close()
     return result
 
-def creating_request():
+def creating_request() -> str:
     ordering = request.args.get("ordering", 'Country')
     ordering_list = ordering.split(",")
     parameters_for_request = ""
